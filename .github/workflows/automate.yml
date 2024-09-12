@@ -36,3 +36,5 @@ jobs:
       uses: we-cli/coverage-badge-action@main
       with:
         files: ./coverage.json
+
+      
