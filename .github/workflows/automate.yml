@@ -38,6 +38,9 @@ jobs:
         files: ./coverage.json
         output: ./badge.svg
 
+    - name: Verify badge file existence
+      run: ls -la  # Check if badge.svg was created successfully
+
     - name: Commit Coverage Badge
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
